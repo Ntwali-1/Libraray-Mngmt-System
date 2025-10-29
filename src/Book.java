@@ -14,4 +14,17 @@ public class Book {
     public void setIsAvailable(String isAvailable) {
         this.isAvailable = isAvailable;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getIsAvailable() {
+        return isAvailable;
+    }
 }
+
