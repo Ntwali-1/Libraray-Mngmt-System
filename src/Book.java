@@ -1,29 +1,30 @@
 public class Book {
     private String title;
     private String author;
-    private String isAvailable;
+    private boolean isAvailable = true;
+
+    public Book(String title, String author, boolean isAvailable) {
+        this.title = title;
+        this.author = author;
+    }
 
     public void setTitle(String title) {
         this.title = title;
     }
-
     public void setAuthor(String author) {
         this.author = author;
     }
-
-    public void setIsAvailable(String isAvailable) {
+    public void setIsAvailable(boolean isAvailable) {
         this.isAvailable = isAvailable;
     }
 
     public String getTitle() {
         return title;
     }
-
     public String getAuthor() {
         return author;
     }
-
-    public String getIsAvailable() {
+    public boolean getIsAvailable() {
         return isAvailable;
     }
 }
